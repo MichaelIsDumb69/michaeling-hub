@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("michael's hub", "Synapse")
+local Window = Library.CreateLib("michael's hub", "Serpent")
 local Tab = Window:NewTab("A Universal Time")
 local Section = Tab:NewSection("black market teleports")
 
@@ -279,6 +279,7 @@ print("Teleported To Deeproot Canopy Mine")
 end)
 
 TeleportSection:NewLabel("Trainers")
+TeleportSection:NewLabel("note: you need around 220 gold for lower tier classes like martial artist and around 3000 gold for higher tier classes like brawler")
 
 TeleportSection:NewButton("Martial Artist Trainer", "Teleport u to Martial Artist Trainer", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(486.369659, 116.542603, -2651.84595, 0.999640107, -9.30402777e-08, 0.0268269461, 9.35475555e-08, 1, -1.76543491e-08, -0.0268269461, 2.01575894e-08, 0.999640107)
@@ -355,47 +356,11 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1972.090
 print("Teleported To Dark Wraith Trainer")
 end)
 
-local Attack = Window:NewTab("Attacks")
-
-local AttackSection = Attack:NewSection("Attack")
-
-AttackSection:NewLabel("Attacks")
-
-
-AttackSection:NewButton("Dagger Attack", "Auto Complete Dagger Attack MiniGame", function()
-local A_1 = true
-local A_2 = "DaggerQTE"
-local Event = game:GetService("ReplicatedStorage").Remotes.Information.RemoteFunction
-Event:FireServer(A_1, A_2)
+TeleportSection:NewButton("Brawler Trainer", "Teleport u to Brawler Trainer", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(238.96299743652344, 94.5629653930664, -4659.29833984375)
+print("Teleported To Brawler Trainer")
 end)
 
-AttackSection:NewButton("Magic Attack", "Auto Complete Magic Attack MiniGame", function()
-local A_1 = true
-local A_2 = "MagicQTE"
-local Event = game:GetService("ReplicatedStorage").Remotes.Information.RemoteFunction
-Event:FireServer(A_1, A_2)
-end)
-
-AttackSection:NewButton("Sword Attack", "Auto Complete Sword Attack MiniGame", function()
-local A_1 = true
-local A_2 = "SwordQTE"
-local Event = game:GetService("ReplicatedStorage").Remotes.Information.RemoteFunction
-Event:FireServer(A_1, A_2)
-end)
-
-AttackSection:NewButton("Spear Attack", "Auto Complete Spear Attack MiniGame", function()
-local A_1 = true
-local A_2 = "SpearQTE"
-local Event = game:GetService("ReplicatedStorage").Remotes.Information.RemoteFunction
-Event:FireServer(A_1, A_2)
-end)
-
-AttackSection:NewButton("Gauntlet Attack", "Auto Complete Gauntlet Attack MiniGame", function()
-local A_1 = true
-local A_2 = "GauntletQTE"
-local Event = game:GetService("ReplicatedStorage").Remotes.Information.RemoteFunction
-Event:FireServer(A_1, A_2)
-end)
 
 local Misc = Window:NewTab("Misc")
 

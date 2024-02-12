@@ -223,7 +223,7 @@ end)
 TeleportSection:NewLabel("Old Ruins")
 
 TeleportSection:NewButton("Old Ruins", "Teleport u to Old Ruins", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2507.99902, 40.3726044, -2929.11987, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2507.8076171875, 43.53388977050781, -2929.423095703125)
 print("Teleported To Old Ruins")
 end)
 
@@ -381,6 +381,8 @@ local Event = game:GetService("ReplicatedStorage").Remotes.Information.RemoteFun
 Event:FireServer(A_1, A_2)
 
 wait(0.55)
+
+print("auto dodge activated, im gonna cum aggh")
 
 end
 end)
